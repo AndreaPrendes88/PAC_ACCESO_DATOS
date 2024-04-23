@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+ <hibernate-mapping>
+ 	<class name ="ilerna.Libro" table="Libro" catalog="pac">
+		<id name ="IdLibro">
+			<column name = "libro_id"/>
+			<generator class ="increment"/>
+		</id>
+		<property name="LibroTitulo" column="Titulo" type="string"></property>
+		<property name="LibroAutor" column="Autor" type="string"></property>
+		<property name="LibroPublicacion" column="Anio_publicacion" type="date"></property>
+		<property name="LibroDisponible" column="Disponible" type="boolean"></property>
+	</class>
+ </hibernate-mapping> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+ <hibernate-mapping>
+ 	<class name ="ilerna.Prestamo" table="prestamo" catalog="pac">
+		<id name ="IdPrestamo">
+			<column name = "prestamo_id"/>
+			<generator class ="increment"/>
+		</id>
+		<property name="FechaPrestamo" column="Fecha_prestamo" type="date"></property>
+		<property name="FechaDevolucion" column="Fecha_devolucion" type="date"></property>
+		<property name="IdLibro" column="libro_id" type="integer"></property>
+		<property name="IdLector" column="lector_id" type="integer"></property>
+	</class>
+ </hibernate-mapping>

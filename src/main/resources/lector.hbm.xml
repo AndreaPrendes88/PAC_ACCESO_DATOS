@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+ <hibernate-mapping>
+ 	<class name ="ilerna.Lector" table="Lector" catalog="pac">
+		<id name ="idLector">
+			<column name = "lector_id"/>
+			<generator class ="increment"/>
+		</id>
+		<property name="lectorNombre" column="Nombre" type="string"></property>
+		<property name="lectorApellido" column="Apellido" type="string"></property>
+		<property name="lectorEmail" column="Email" type="text"></property>
+	</class>
+ </hibernate-mapping>
